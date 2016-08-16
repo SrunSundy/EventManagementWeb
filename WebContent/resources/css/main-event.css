@@ -1,0 +1,20 @@
+body{
+    background: #F5F5F5;
+}
+.navbar, .dropdown-menu{
+background:#FFFFFF;
+border: none;
+box-shadow:1px 0px 1px 1px #E0E0E0;
+
+}
+i.fa{
+	margin-right:10px;
+	
+}
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+  border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  border-bottom: 3px solid transparent;
+  background: none;
+}
