@@ -10,6 +10,8 @@
  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/plugin/bootstrap/css/bootstrap.min.css">
  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/plugin/font-awesome-4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/green-fixed-header.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/darkblue-fixed-header.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main-event.css">
 <style>
 	
 
@@ -79,7 +81,7 @@
 </head>
 <body  >
 
-	<div class="sun-wrapper">
+	<div class="sun-wrapper darkblue-bg">
 		<div class="sun-header">
 			<jsp:include page="element/header.jsp"></jsp:include>
 		</div>
