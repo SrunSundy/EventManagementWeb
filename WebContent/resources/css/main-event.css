@@ -18,3 +18,102 @@ i.fa{
   border-bottom: 3px solid transparent;
   background: none;
 }
+
+/* 
+text in the header css
+*/
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+ color:#9E9E9E;
+ 
+}
+a.sun-bar-text{
+font-size:16px;
+ margin-top:5px;
+}
+.dropdown-menu{
+      -webkit-box-shadow: none;
+    box-shadow:none;
+}
+/* 
+close text in the header css
+*/
+
+.navbar-toggle .icon-bar{
+    color: #9E9E9E;
+    background: #9E9E9E;
+}
+
+div.divide-left{
+	width: 50%;
+	float:left;
+}
+div.divide-right{
+	width: 50%;
+	float: left;
+
+}
+span.span-logo{
+	width: 150px;
+	height:60px;
+
+}
+img.img-logo{
+	width:100px;
+	height:60px;
+}
+h4.text-logo{
+	    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height:40px;
+}
+span.span-profile{
+	width: 150px;
+	height:60px;
+	float:right;
+
+}
+img.img-profile{
+	width:50px;
+	height:50px;
+	border-radius: 100%;
+	float:right;
+	margin-top:5px;
+	border: 2px solid #edf0f0;
+}
+span.span-profile-expand{
+	width: 30px;
+	height:30px;
+	margin-top:-15px;
+	float:right;
+	
+
+}
+img.img-profile-expand{
+	width:35px;
+	height:35px;
+	border-radius: 100%;
+	float:right;
+	margin-top:5px;
+	border: 2px solid #edf0f0;
+}
+div.sun-header{
+	overflow:hidden;
+	height:120px;
+}
+div.sun-content{
+
+}
+div.sun-event{
+	margin-top:20px;
+}
+
+div.services_block {
+	
+   height: 130px;
+   background-color: #fff;
+   border-left:10px solid #F5F5F5;
+   border-right:10px solid #F5F5F5;
+   
+}
