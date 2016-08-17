@@ -1,12 +1,15 @@
 
-div.darkblue-bg .nav li:hover a,div.darkblue-bg .nav li.active a{
+div.darkblue-bg .nav-header li:hover a,div.darkblue-bg .nav-header li.active a{
    /* border-bottom: #C4E17F 3px solid;  */
   color: #80CBC4;
   
   
 }
+div.darkblue-bg .nav-header li.active{
+   /* border-bottom: #C4E17F 3px solid;  */
+  border-bottom: 2px red solid;
+}
  div.darkblue-bg div.upper-header{
- 	height:60px;
  	background:#009688;
  }
  @media screen and (max-width: 767px) {
@@ -18,22 +21,6 @@ div.darkblue-bg .nav li:hover a,div.darkblue-bg .nav li.active a{
 	    color:#fff;
 	    background: #fff;
 	}
-    div.darkblue-bg div.upper-header{
-    	display: none;
-    }
-	div.darkblue-bg span.event-delete-phone{
-		width: 10px;
-		height:10px;
-		position:absolute;
-		right: 5px;
-		top:5px;
-		display:block;
-	}
-	div.darkblue-bg span.event-delete,span.event-delete i{
-		display:none;
-	}
-	div.darkblue-bg span.event-delete-phone i{
-		display:block;
-	}
+	
 }
 

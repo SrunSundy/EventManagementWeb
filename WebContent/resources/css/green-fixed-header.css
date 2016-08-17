@@ -6,7 +6,6 @@ div.green-bg .nav li:hover a,div.green-bg .nav li.active a{
   
 }
  div.green-bg div.upper-header{
- 	height:60px;
  	background:#4CAF50;
  }
  @media screen and (max-width: 767px) {
@@ -18,22 +17,6 @@ div.green-bg .nav li:hover a,div.green-bg .nav li.active a{
 	    color:#fff;
 	    background: #fff;
 	}
-    div.green-bg div.upper-header{
-    	display: none;
-    }
-	div.green-bg span.event-delete-phone{
-		width: 10px;
-		height:10px;
-		position:absolute;
-		right: 5px;
-		top:5px;
-		display:block;
-	}
-	div.green-bg span.event-delete,span.event-delete i{
-		display:none;
-	}
-	div.green-bg span.event-delete-phone i{
-		display:block;
-	}
+    
 }
 
