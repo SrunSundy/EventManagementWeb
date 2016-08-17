@@ -35,9 +35,9 @@
 				  </div>
 			                   <!--  <a class="navbar-brand" href="#">Logo</a> -->
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
+			<!-- <div id="navbar" class="navbar-collapse collapse">
 			       <div class="col-sm-12"><div class="col-sm-12">
-				         <ul class="nav navbar-nav">
+				         <ul class="nav navbar-nav sun-nav-li" >
 				               <li class="active"><a href="#" class="sun-bar-text"><i class="fa fa-th-large" aria-hidden="true"></i>Parties</a></li>			                       
 				               <li><a href="#" class="sun-bar-text"><i class="fa fa-users" aria-hidden="true"></i>Invited People</a></li>
 				               <li><a href="#" class="sun-bar-text"><i class="fa fa-book" aria-hidden="true"></i>History Log</a></li>    
@@ -46,6 +46,13 @@
 				               <li class=""><a  class="sun-bar-text" href="#">Logout</a></li>
 				         </ul>
 			       </div></div>
+			</div> -->
+			<div class="sun-lower-header" style="height:40px;background:#FFFFFF;border: none;box-shadow:1px 0px 0px 1px #E0E0E0;">
+				<ul class="nav-header">
+					 <li class="active"><a href="#" class="sun-bar-text"><i class="fa fa-th-large" aria-hidden="true"></i>Party</a></li>			                       
+				     <li><a href="#" class="sun-bar-text"><i class="fa fa-users" aria-hidden="true"></i>Participant</a></li>
+				     <li><a href="#" class="sun-bar-text"><i class="fa fa-book" aria-hidden="true"></i>History</a></li>   
+				</ul>
 			</div>
 			            
 		</nav>
