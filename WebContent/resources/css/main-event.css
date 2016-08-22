@@ -5,6 +5,37 @@ body{
 div.upper-header{
  	height: 50px;
  }
+ ul.left{
+ 	width: 5%;
+ 	float:left;
+ 	position:relative;
+ }
+ ul.left li a{
+ 	text-decoration: none;
+ 	font-size: 18px;
+ 	margin-top: 30px;
+ 	
+ }
+  ul.left li a i{
+ 	line-height: 40px;
+ 	
+ }
+ ul.left li{
+ 	
+ 	text-align: center;
+ 	display:block;
+ 	height: 40px;
+ 	width: 40px;
+ 	list-style:none;
+ 	position:absolute;
+ 	left:0;
+ 	
+ 	
+ }
+ ul.right{
+ 	width: 95%;
+ 	float:left;
+ }
  ul.nav-header{
  	text-align:center;
  }
@@ -52,7 +83,7 @@ border: none;
 box-shadow:1px 0px 1px 1px #E0E0E0;
 
 } */
-i.fa{
+i.fa-style{
 	margin-right:5px;
 	
 }

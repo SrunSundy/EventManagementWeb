@@ -7,7 +7,7 @@
 						<div  class='logo divide-left'>
 							<span class="span-logo">
 								<h4 class="text-logo">
-									<i class="fa fa-th" aria-hidden="true"></i>CELEBRATION
+									<i class="fa fa-th fa-style" aria-hidden="true"></i>CELEBRATION
 								</h4>
 							</span>
 						</div>
@@ -48,11 +48,15 @@
 			       </div></div>
 			</div> -->
 			<div class="sun-lower-header" style="height:40px;background:#FFFFFF;border: none;box-shadow:1px 0px 0px 1px #E0E0E0;">
-				<ul class="nav-header">
-					 <li class="active"><a href="#" class="sun-bar-text"><i class="fa fa-th-large" aria-hidden="true"></i>Party</a></li>			                       
-				     <li><a href="#" class="sun-bar-text"><i class="fa fa-users" aria-hidden="true"></i>Participant</a></li>
-				     <li><a href="#" class="sun-bar-text"><i class="fa fa-book" aria-hidden="true"></i>History</a></li>   
+				<ul class="left">
+					<li><a href="::javascript;"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 				</ul>
+				<ul class="nav-header right">
+					 <li class="active"><a href="#" class="sun-bar-text"><i class="fa fa-th-large fa-style" aria-hidden="true"></i>Party</a></li>			                       
+				     <li><a href="#" class="sun-bar-text"><i class="fa fa-users fa-style" aria-hidden="true"></i>Participant</a></li>
+				     <li><a href="#" class="sun-bar-text"><i class="fa fa-book fa-style" aria-hidden="true"></i>History</a></li>   
+				</ul>
+				<div style="clear:both"></div>
 			</div>
 			            
 		</nav>
