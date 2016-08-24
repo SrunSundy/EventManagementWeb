@@ -110,25 +110,23 @@ div.sidebar-wrapper-mini {
 	
    margin-top:51px;
    z-index: 10000;
-    position: fixed;
-    left: 200px;
-    width: 0px;
-    height: 100%;
-    margin-left: -200px;
-    overflow-y: auto;
-    background: #FFFFFF;
-     -webkit-transition: all 0.0s ease;
-    -moz-transition: all 0.0s ease;
-    -o-transition: all 0s ease;
-    transition: all 0s ease;
+   position: fixed;
+   left: 200px;
+   width: 0px;
+   height: 100%;
+   margin-left: -200px;
+   overflow-y: auto;
+   background: #FFFFFF;
+   -webkit-transition: all 0.0s ease;
+   -moz-transition: all 0.0s ease;
+   -o-transition: all 0s ease;
+   transition: all 0s ease;
 }
 @media screen and (max-width:768px) {
 
 div.sidebar-wrapper-mini{
-	
-	 width: 200px;
-	
-      -webkit-transition: all 0.2s ease;
+	width: 200px;
+	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -139,8 +137,6 @@ div.sidebar-wrapper-mini{
 
 
 #wrapper.toggled #sidebar-wrapper {
-	
-	
     width: 0px;
 }
 
