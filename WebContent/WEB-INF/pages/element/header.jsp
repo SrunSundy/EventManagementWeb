@@ -48,14 +48,19 @@
 			       </div></div>
 			</div> -->
 			<div class="sun-lower-header" style="height:40px;background:#FFFFFF;border: none;box-shadow:1px 0px 0px 1px #E0E0E0;">
-				<ul class="left">
-					<li><a href="::javascript;"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-				</ul>
-				<ul class="nav-header right">
-					 <li class="active"><a href="#" class="sun-bar-text"><i class="fa fa-th-large fa-style" aria-hidden="true"></i>Party</a></li>			                       
-				     <li><a href="#" class="sun-bar-text"><i class="fa fa-users fa-style" aria-hidden="true"></i>Participant</a></li>
-				     <li><a href="#" class="sun-bar-text"><i class="fa fa-book fa-style" aria-hidden="true"></i>History</a></li>   
-				</ul>
+				<div class="left">
+					<ul >
+						<li><a href="javascript:;" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				 
+				<div class="right">
+					<ul class="nav-header ">
+						 <li class="active"><a href="#" class="sun-bar-text"><i class="fa fa-th-large fa-style" aria-hidden="true"></i>Party</a></li>			                       
+					     <li><a href="#" class="sun-bar-text"><i class="fa fa-users fa-style" aria-hidden="true"></i>Participant</a></li>
+					     <li><a href="#" class="sun-bar-text"><i class="fa fa-book fa-style" aria-hidden="true"></i>History</a></li>   
+					</ul>
+				</div>
 				<div style="clear:both"></div>
 			</div>
 			            
