@@ -5,22 +5,23 @@ body{
 div.upper-header{
  	height: 50px;
  }
- ul.left{
+ div.left{
  	width: 5%;
+ 	height: 40px;
  	float:left;
  	position:relative;
  }
- ul.left li a{
+ div.left ul li a{
  	text-decoration: none;
  	font-size: 18px;
  	margin-top: 30px;
  	
  }
-  ul.left li a i{
+  div.left ul li a i{
  	line-height: 40px;
  	
  }
- ul.left li{
+ div.left ul li{
  	
  	text-align: center;
  	display:block;
@@ -32,9 +33,11 @@ div.upper-header{
  	
  	
  }
- ul.right{
+ div.right{
  	width: 95%;
  	float:left;
+ 	height: 40px;
+
  }
  ul.nav-header{
  	text-align:center;
