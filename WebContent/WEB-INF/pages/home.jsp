@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/darkblue-fixed-header.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main-event.css">
    <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/simple-sidebar.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/sidebar-menu.css">
 <style>
 	
-
+	
 </style>
 </head>
 <body  >
@@ -25,9 +26,13 @@
 			<jsp:include page="element/header.jsp"></jsp:include>
 		</div>
 		<div id="sidebar-wrapper-mini" class="sidebar-wrapper-mini">
-		           <ul class="sidebar-nav">
+		           <ul class="sidebar-nav" >
 		                <li>
 		                    <a href="#" id="test">Dashboard</a>
+		                     <ul>
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
 		                </li>
 		                <li>
 		                    <a href="#">Shortcuts</a>
@@ -35,7 +40,8 @@
 		           </ul>
 		    </div>
 		
-		<div class="sun-content" style="margin-top:91px;">	
+		
+		<div class="sun-content" >	
 		
 		
 			 
@@ -44,11 +50,46 @@
 		        <!-- Sidebar -->
 		        <div id="sidebar-wrapper">
 		            <ul class="sidebar-nav">
-		                <li>
-		                    <a href="#" id="test">Dashboard</a>
+		            	<li class="li-space"></li>
+		                <li class="li-has-child">
+		                    <a href="#" >Dashboard</a>
+		                     <ul class="ul-child">
+					               <li><a href="#">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
 		                </li>
-		                <li>
-		                    <a href="#">Shortcuts</a>
+		                <li class="li-has-child">
+		                    <a href="#" >Shortcuts</a>
+		                    <ul class="ul-child">
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
+		                </li>
+		                 <li class="li-has-child">
+		                    <a href="#" >Shortcuts</a>
+		                    <ul class="ul-child">
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
+		                </li>
+		                 <li class="li-has-child">
+		                    <a href="#" >Shortcuts</a>
+		                    <ul class="ul-child">
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
 		                </li>
 		            </ul>
 		        </div>
@@ -56,7 +97,7 @@
 		
 		        <!-- Page Content -->
 		        <div id="">
-		          
+		          <div class="div-space"></div>
 		            <div class="col-lg-12">
 		                  <h1>Simple Sidebar</h1>
 		                  <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
@@ -92,6 +133,10 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+    });
+    $("li.li-has-child a").click(function(){
+    	
+    	$(this).siblings().eq(0).slideToggle(100);
     });
 	
     </script>

@@ -5,6 +5,12 @@ body{
 div.upper-header{
  	height: 50px;
  }
+ div.div-space{
+ 	height: 91px;
+ }
+ li.li-space{
+ 	height: 91px;
+ }
  div.left{
  	width: 5%;
  	height: 40px;
@@ -181,7 +187,7 @@ div.sun-header{
 	overflow:hidden;
 }
 div.sun-content{
-
+	position:relative;
 }
 div.sun-event{
 	margin-top:20px;
