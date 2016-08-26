@@ -98,10 +98,12 @@
 		        <!-- Page Content -->
 		        <div id="">
 		          <div class="div-space"></div>
-		            <div class="col-lg-12">
+		            <div class="col-lg-12" id="body-container" style="overflow:auto;">
+		            
 		                  <h1>Simple Sidebar</h1>
 		                  <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
 		                  <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+		            <textarea></textarea>
 		            </div>
 		        </div>
 		        <!-- /#page-content-wrapper -->
@@ -138,7 +140,11 @@
     	
     	$(this).siblings().eq(0).slideToggle(100);
     });
-	
+    $(window).resize(function(){
+    	 $("#body-container").height($(window).height()-$(".div-space").height());
+    });
+   
+    $("#body-container").height($(window).height()-$(".div-space").height()); 
     </script>
 </body>
 </html>
