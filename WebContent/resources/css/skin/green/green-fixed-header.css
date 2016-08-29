@@ -1,0 +1,27 @@
+div.green-bg .nav-header li:hover a,div.green-bg .nav-header li.active a{
+  /* border-bottom: #C4E17F 3px solid;  */
+  color: #00b965;
+  
+  
+}
+
+div.green-bg .nav-header li.active{
+   /* border-bottom: #C4E17F 3px solid;  */
+  border-bottom: 3px #00a65a solid;
+  font-weight: bold;
+}
+ div.green-bg div.upper-header{
+ 	background:#00a65a;
+ }
+ @media screen and (max-width: 767px) {
+    div.green-bg div.lower-header {
+    	color:#fff;
+        background-color: #00a65a;
+    }
+    div.green-bg .navbar-toggle .icon-bar{
+	    color:#fff;
+	    background: #fff;
+	}
+    
+}
+

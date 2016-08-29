@@ -1,0 +1,27 @@
+
+div.darkblue-bg .nav-header li:hover a,div.darkblue-bg .nav-header li.active a{
+   /* border-bottom: #C4E17F 3px solid;  */
+  color: #80CBC4;
+  
+  
+}
+div.darkblue-bg .nav-header li.active{
+   /* border-bottom: #C4E17F 3px solid;  */
+  border-bottom: 3px #009688 solid;
+  font-weight: bold;
+}
+ div.darkblue-bg div.upper-header{
+ 	background:#009688;
+ }
+ @media screen and (max-width: 767px) {
+    div.darkblue-bg div.lower-header {
+    	color:#fff;
+        background-color: #009688;
+    }
+    div.darkblue-bg .navbar-toggle .icon-bar{
+	    color:#fff;
+	    background: #fff;
+	}
+	
+}
+
