@@ -1,0 +1,9 @@
+div.green-bg a.click-on{
+    border-left : 5px solid #00a65a;
+    color : #00a65a !important;
+}
+div.green-bg a.detail-click-on{
+	
+	color: #00b965 !important;
+	font-style: italic;
+}

@@ -9,27 +9,22 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/plugin/bootstrap/css/bootstrap.min.css">
  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/plugin/font-awesome-4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/green-fixed-header.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/darkblue-fixed-header.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/green/green-fixed-header.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/green/green-sidebar-menu.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/darkblue/darkblue-fixed-header.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/darkblue/darkblue-sidebar-menu.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main-event.css">
    <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/simple-sidebar.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/sidebar-menu.css">
 <style>
-	#contain-wrapper{
-		
-		margin-top: 8px;
-		width: 100%;
-		background: #fff;
-		min-height: 500px;
-		padding: 10px;
-		box-shadow:1px 1px 1px 1px #E0E0E0;
-	}
+	
+	
 	
 </style>
 </head>
 <body  >
 
-	<div class="sun-wrapper darkblue-bg">
+	<div class="sun-wrapper green-bg">
 		<div class="sun-header">
 			<jsp:include page="element/header.jsp"></jsp:include>
 		</div>
@@ -106,16 +101,20 @@
 		        <!-- Page Content -->
 		        <div id="">
 		          
-		            <div class="col-lg-12" id="body-container" style="overflow:auto;">
-		            	 
-		            		<div id="contain-wrapper">
-		                 		
-		                 		<div style="width:200px;height:100px;background:#FFCDD2;">
-		                 			
+		            <div class="col-lg-12" id="body-container" style="overflow:auto;">	            	 
+		            	<div id="contain-wrapper">
+		                 	<div class="title-bar">
+		                 		<div class="title-text">
+		                 			<p class="text"><span class="txt-title"><i class="fa fa-cubes" aria-hidden="true"></i> Event</span><span class="title-detail"> this includes all events that you created.</span></p>
 		                 		</div>
+								<div class="display-type"></div>		                 	
 		                 	</div>
-		            	
-		                </div>
+		                 	<div class="display-content">
+		                 	
+		                 	</div>
+		       
+		                </div>	            	
+		            </div>
 		           
 		        </div>
 		        <!-- /#page-content-wrapper -->
@@ -166,7 +165,16 @@
     $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height());
     $("#body-container").height($(window).height()-$(".div-space").height()); 
     
+    $("#sidebar-wrapper ul.sidebar-nav li.li-has-child > a").click(function(){
+    	$("#sidebar-wrapper ul.sidebar-nav li.li-has-child > a").removeClass("click-on");
+    	$("li.li-has-child  li a").removeClass("detail-click-on");
+    	$(this).addClass("click-on");
+    });
     
+    $("li.li-has-child  li a").click(function(){
+    	$("li.li-has-child  li a").removeClass("detail-click-on");
+    	$(this).addClass("detail-click-on");
+    });
     </script>
 </body>
 </html>

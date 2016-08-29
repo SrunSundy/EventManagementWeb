@@ -19,6 +19,7 @@ li.li-has-child  li a{
 }
 
 li.li-has-child > a{
-	color: green;
+	color: #616161;
 	font-weight: bold;
 }
+

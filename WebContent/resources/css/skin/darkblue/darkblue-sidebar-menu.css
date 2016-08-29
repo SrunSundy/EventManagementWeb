@@ -1,0 +1,9 @@
+div.darkblue-bg a.click-on{
+    border-left : 5px solid #009688;
+    color : #009688 !important;
+}
+div.darkblue-bg a.detail-click-on{
+	
+	color: #80CBC4 !important;
+	font-style: italic;
+}

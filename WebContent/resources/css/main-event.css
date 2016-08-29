@@ -64,13 +64,13 @@ ul.nav-header li a{
 
 @media screen and (max-width: 767px) {
    
-	div.darkblue-bg div.sun-lower-header{
+	div.sun-lower-header{
 		display:none;
 	}
-    div.darkblue-bg div.upper-header{
+    div.upper-header{
     	display: none;
     }
-	div.darkblue-bg span.event-delete-phone{
+	span.event-delete-phone{
 		width: 10px;
 		height:10px;
 		position:absolute;
@@ -78,10 +78,10 @@ ul.nav-header li a{
 		top:5px;
 		display:block;
 	}
-	div.darkblue-bg span.event-delete,span.event-delete i{
+	span.event-delete,span.event-delete i{
 		display:none;
 	}
-	div.darkblue-bg span.event-delete-phone i{
+	span.event-delete-phone i{
 		display:block;
 	}
 }
@@ -202,4 +202,27 @@ div.services_block {
    border-left:10px solid #F5F5F5;
    border-right:10px solid #F5F5F5;
    
+}
+#contain-wrapper{	
+	position:relative;
+	margin-top: 8px;
+	width: 100%;
+	background: #fff;
+	min-height: 500px;
+	padding-left: 10px;
+	box-shadow:1px 1px 1px 1px #E0E0E0;
+}
+span.txt-title{
+	color: #616161;
+	font-size: 25px;
+	font-weight: bold;
+}
+div.title-bar{
+	position:absolute;
+	top: 10px;
+}
+span.title-detail{
+	font-size: 12px;
+	font-style: italic;
+	color: #BDBDBD;
 }
