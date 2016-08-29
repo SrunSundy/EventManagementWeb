@@ -24,23 +24,54 @@
 </head>
 <body  >
 
-	<div class="sun-wrapper green-bg">
+	<div class="sun-wrapper darkblue-bg">
 		<div class="sun-header">
 			<jsp:include page="element/header.jsp"></jsp:include>
 		</div>
 		<div id="sidebar-wrapper-mini" class="sidebar-wrapper-mini">
-		           <ul class="sidebar-nav" >
-		                <li>
-		                    <a href="#" id="test">Dashboard</a>
-		                     <ul>
-					               <li><a href="#" id="test">Dashboard</a></li>
+		           <ul class="sidebar-nav">
+		            	
+		                <li class="li-has-child">
+		                    <a href="#" >Dashboard</a>
+		                     <ul class="ul-child">
+					               <li><a href="#">Dashboard</a></li>
 					               <li><a href="#">Shortcuts</a></li>
 					         </ul>
 		                </li>
-		                <li>
-		                    <a href="#">Shortcuts</a>
+		                <li class="li-has-child">
+		                    <a href="#" >Shortcuts</a>
+		                    <ul class="ul-child">
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
 		                </li>
-		           </ul>
+		                 <li class="li-has-child">
+		                    <a href="#" >Shortcuts</a>
+		                    <ul class="ul-child">
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
+		                </li>
+		                 <li class="li-has-child">
+		                    <a href="#" >Shortcuts</a>
+		                    <ul class="ul-child">
+					               <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					                <li><a href="#" id="test">Dashboard</a></li>
+					               <li><a href="#">Shortcuts</a></li>
+					         </ul>
+		                </li>
+		            </ul>
 		    </div>
 		
 		
@@ -167,6 +198,11 @@
     
     $("#sidebar-wrapper ul.sidebar-nav li.li-has-child > a").click(function(){
     	$("#sidebar-wrapper ul.sidebar-nav li.li-has-child > a").removeClass("click-on");
+    	$("li.li-has-child  li a").removeClass("detail-click-on");
+    	$(this).addClass("click-on");
+    });
+    $("#sidebar-wrapper-mini ul.sidebar-nav li.li-has-child > a").click(function(){
+    	$("#sidebar-wrapper-mini ul.sidebar-nav li.li-has-child > a").removeClass("click-on");
     	$("li.li-has-child  li a").removeClass("detail-click-on");
     	$(this).addClass("click-on");
     });
