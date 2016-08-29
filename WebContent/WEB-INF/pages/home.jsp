@@ -15,7 +15,15 @@
    <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/simple-sidebar.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/sidebar-menu.css">
 <style>
-	
+	#contain-wrapper{
+		
+		margin-top: 8px;
+		width: 100%;
+		background: #fff;
+		min-height: 500px;
+		padding: 10px;
+		box-shadow:1px 1px 1px 1px #E0E0E0;
+	}
 	
 </style>
 </head>
@@ -45,12 +53,12 @@
 		
 		
 			 
-		    
+		    <div class="div-space"></div>
 			<div id="wrapper">
 		        <!-- Sidebar -->
 		        <div id="sidebar-wrapper">
 		            <ul class="sidebar-nav">
-		            	<li class="li-space"></li>
+		            	
 		                <li class="li-has-child">
 		                    <a href="#" >Dashboard</a>
 		                     <ul class="ul-child">
@@ -97,14 +105,18 @@
 		
 		        <!-- Page Content -->
 		        <div id="">
-		          <div class="div-space"></div>
+		          
 		            <div class="col-lg-12" id="body-container" style="overflow:auto;">
-		            
-		                  <h1>Simple Sidebar</h1>
-		                  <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-		                  <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-		            <textarea></textarea>
-		            </div>
+		            	 
+		            		<div id="contain-wrapper">
+		                 		
+		                 		<div style="width:200px;height:100px;background:#FFCDD2;">
+		                 			
+		                 		</div>
+		                 	</div>
+		            	
+		                </div>
+		           
 		        </div>
 		        <!-- /#page-content-wrapper -->
 		    </div>
@@ -132,19 +144,29 @@
   <script src="${pageContext.request.contextPath }/resources/plugin/jquery/jQuery-2.1.4.min.js"></script>
   <script src="${pageContext.request.contextPath }/resources/plugin/bootstrap/js/bootstrap.min.js"></script>
   <script>
+  
+
+
+ 
+
+  
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
     $("li.li-has-child a").click(function(){
-    	
+    
     	$(this).siblings().eq(0).slideToggle(100);
     });
     $(window).resize(function(){
+    	$('#sidebar-wrapper').css("height","100%");
+    	setTimeout(function(){ $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height()); }, 180); 
     	 $("#body-container").height($(window).height()-$(".div-space").height());
     });
-   
+    $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height());
     $("#body-container").height($(window).height()-$(".div-space").height()); 
+    
+    
     </script>
 </body>
 </html>

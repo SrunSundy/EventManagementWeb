@@ -24,10 +24,11 @@
 
 #sidebar-wrapper {
     z-index: 1000;
+   
     position: fixed;
     left: 220px;
+    height:100%;
     min-width: 0px;
-    height: 100%;
     margin-left: -220px;
     overflow-y: auto;
     overflow-x:hidden;
@@ -37,7 +38,7 @@
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     padding-bottom: 200px;
-  
+  box-shadow:0px 1px 1px 1px #E0E0E0;
 }
 
 

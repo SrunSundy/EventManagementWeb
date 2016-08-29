@@ -1,5 +1,6 @@
 body{
     background: #F5F5F5;
+    height: 100%;
 }
 
 div.upper-header{
@@ -114,6 +115,7 @@ text in the header css
 a.sun-bar-text{
 font-size:15px;
  margin-top:5px;
+ 
 }
 .dropdown-menu{
       -webkit-box-shadow: none;
