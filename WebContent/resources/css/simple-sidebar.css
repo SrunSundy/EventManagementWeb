@@ -128,11 +128,21 @@ div.sidebar-wrapper-mini {
 @media screen and (max-width:768px) {
 
 div.sidebar-wrapper-mini{
-	min-width: 220px;
-	-webkit-transition: all 0.2s ease;
+	z-index: 1000;
+    position: fixed;
+    left: 220px;
+    height:100%;
+    min-width: 0px;
+    margin-left: -220px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background: #FFFFFF;
+    -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    padding-bottom: 200px;
+  box-shadow:0px 1px 1px 1px #E0E0E0;
 }
 #wrapper.toggled {
     padding-left: 0px;

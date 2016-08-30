@@ -70,6 +70,9 @@ ul.nav-header li a{
     div.upper-header{
     	display: none;
     }
+    span.title-detail{
+    	display:none;
+    }
 	span.event-delete-phone{
 		width: 10px;
 		height:10px;
