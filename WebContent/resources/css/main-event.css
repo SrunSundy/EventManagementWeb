@@ -204,23 +204,20 @@ div.services_block {
    
 }
 #contain-wrapper{	
-	position:relative;
+	
 	margin-top: 8px;
 	width: 100%;
 	background: #fff;
 	min-height: 500px;
-	padding-left: 10px;
+	padding: 10px;
 	box-shadow:1px 1px 1px 1px #E0E0E0;
 }
 span.txt-title{
 	color: #616161;
-	font-size: 25px;
+	font-size: 21px;
 	font-weight: bold;
 }
-div.title-bar{
-	position:absolute;
-	top: 10px;
-}
+
 span.title-detail{
 	font-size: 12px;
 	font-style: italic;

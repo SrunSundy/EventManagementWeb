@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/sidebar-menu.css">
 <style>
 	
-	
+	div.title-bar{
+		width: 100%;
+		border-bottom: 2px solid #BDBDBD;
+		
+	}
 	
 </style>
 </head>
@@ -29,122 +33,39 @@
 			<jsp:include page="element/header.jsp"></jsp:include>
 		</div>
 		<div id="sidebar-wrapper-mini" class="sidebar-wrapper-mini">
-		           <ul class="sidebar-nav">
-		            	
-		                <li class="li-has-child">
-		                    <a href="#" >Dashboard</a>
-		                     <ul class="ul-child">
-					               <li><a href="#">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		                <li class="li-has-child">
-		                    <a href="#" >Shortcuts</a>
-		                    <ul class="ul-child">
-					               <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		                 <li class="li-has-child">
-		                    <a href="#" >Shortcuts</a>
-		                    <ul class="ul-child">
-					               <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		                 <li class="li-has-child">
-		                    <a href="#" >Shortcuts</a>
-		                    <ul class="ul-child">
-					               <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		            </ul>
-		    </div>
+			<jsp:include page="element/sidebar.jsp"></jsp:include>          
+		</div>
 		
 		
 		<div class="sun-content" >	
-		
-		
-			 
+
 		    <div class="div-space"></div>
 			<div id="wrapper">
 		        <!-- Sidebar -->
 		        <div id="sidebar-wrapper">
-		            <ul class="sidebar-nav">
-		            	
-		                <li class="li-has-child">
-		                    <a href="#" >Dashboard</a>
-		                     <ul class="ul-child">
-					               <li><a href="#">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		                <li class="li-has-child">
-		                    <a href="#" >Shortcuts</a>
-		                    <ul class="ul-child">
-					               <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		                 <li class="li-has-child">
-		                    <a href="#" >Shortcuts</a>
-		                    <ul class="ul-child">
-					               <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		                 <li class="li-has-child">
-		                    <a href="#" >Shortcuts</a>
-		                    <ul class="ul-child">
-					               <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					                <li><a href="#" id="test">Dashboard</a></li>
-					               <li><a href="#">Shortcuts</a></li>
-					         </ul>
-		                </li>
-		            </ul>
+		        	<jsp:include page="element/sidebar.jsp"></jsp:include>
 		        </div>
 		        <!-- /#sidebar-wrapper -->
 		
 		        <!-- Page Content -->
-		        <div id="">
-		          
-		            <div class="col-lg-12" id="body-container" style="overflow:auto;">	            	 
+		        <div id="" >	          
+		            <div class="col-lg-12" id="body-container" style="overflow:auto;">	   
+		            	 	 
 		            	<div id="contain-wrapper">
 		                 	<div class="title-bar">
 		                 		<div class="title-text">
-		                 			<p class="text"><span class="txt-title"><i class="fa fa-cubes" aria-hidden="true"></i> Event</span><span class="title-detail"> this includes all events that you created.</span></p>
+		                 			<p class="title-showing"><span class="txt-title"><i class="fa fa-cubes" aria-hidden="true"></i> Event</span><span class="title-detail"> this includes all events that you created.</span></p>
+		                 			
 		                 		</div>
 								<div class="display-type"></div>		                 	
 		                 	</div>
+		                 	
 		                 	<div class="display-content">
 		                 	
 		                 	</div>
 		       
-		                </div>	            	
+		                </div>	
+		                        	
 		            </div>
 		           
 		        </div>
