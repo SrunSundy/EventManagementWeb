@@ -1,0 +1,11 @@
+div.green-bg button.btn-click-on{
+	color: #fff;
+	border: 2px solid #388E3C;
+	background: #00a65a;
+}
+
+div.green-bg div.input-group-addon{
+	background: #00a65a;
+	border-radius: 0;
+	color: #fff;
+}

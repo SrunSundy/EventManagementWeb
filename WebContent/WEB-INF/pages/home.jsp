@@ -11,8 +11,15 @@
  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/plugin/font-awesome-4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/green/green-fixed-header.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/green/green-sidebar-menu.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/green/green-form.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/darkblue/darkblue-fixed-header.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/darkblue/darkblue-sidebar-menu.css">
+   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/darkblue/darkblue-form.css">
+   
+     <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/red/red-fixed-header.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/red/red-sidebar-menu.css">
+   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/skin/red/red-form.css">
+   
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main-event.css">
    <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/simple-sidebar.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/sidebar-menu.css">
@@ -21,25 +28,26 @@
 	div.title-bar{
 		width: 100%;
 		border-bottom: 2px solid #BDBDBD;
-		height: 40px;
+		height: 45px;
 	}
 	div.title-text{
 		width: 50%;
 		float: left;
 	}
 	
-	div.display-type{
+	div.search-box{
 		width: 50%;
 		float: left;
 		
 	}
 	div.type-table,div.type-box {
 		width: 35px;
-		height: 40px;
+		min-height: 40px;
 		float:right;
 		text-align:center;
 		font-size: 22px;
 		color: #616161;
+		
 	}
 	
 	.btn-ch-type:active,
@@ -50,134 +58,58 @@
 	  -webkit-box-shadow: none;
 	  box-shadow: none;
 	}
-	button.btn-click-on{
-		color: #fff;
-		border: 2px solid #00897B;
-		background: #009688;
+	
+	button.btn-ch-type{
+		border-radius: 0;
+	}
+	
+	div.search-box-mini{
+		padding-top: 10px;
+		width: 100%;
+		min-height: 44px;
+		
+	}
+	div.search-box-advance{
+		width: 100%;
+		height: 50px;
+		padding-top: 5px;
+		
+	}
+	
+	div.vertical-gap{
+		margin-top: 10px;
 	}
 	
 	
+	input.form-control,select.form-control{
+		border-radius: 0;
+	}
 	
+	button.btn-event-style{
+		border-radius: 0;
+	}
 	
-	
-	
-	
-	
-	
-	.cf:before, .cf:after{
-    content:"";
-    display:table;
-}
- 
-.cf:after{
-    clear:both;
-}
- 
-.cf{
-    zoom:1;
-}    
-
- /* Form wrapper styling */
-.search-wrapper {
-width: 90%;
-margin: 10px auto 50px auto;
-box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
-}
- 
-/* Form text input */
- 
-.search-wrapper input {
-width: 148px;
-height: 40px;
-padding: 10px 5px;
-float: left;
-font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
-border: 0;
-background: #EEE;
-border-radius: 3px 0 0 3px;
-}
- 
-.search-wrapper input:focus {
-    outline: 0;
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-}
- 
-.search-wrapper input::-webkit-input-placeholder {
-   color: #999;
-   font-weight: normal;
-   font-style: italic;
-}
- 
-.search-wrapper input:-moz-placeholder {
-    color: #999;
-    font-weight: normal;
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 10px;
     font-style: italic;
-}
- 
-.search-wrapper input:-ms-input-placeholder {
-    color: #999;
-    font-weight: normal;
-    font-style: italic;
-}    
- 
-/* Form submit button */
-.search-wrapper button {
-overflow: visible;
-position: relative;
-float: right;
-border: 0;
-padding: 0;
-cursor: pointer;
-height: 40px;
-width: 72px;
-font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
-color: white;
-text-transform: uppercase;
-background: #D83C3C;
-border-radius: 0 3px 3px 0;
-text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-}
-   
-.search-wrapper button:hover{     
-    background: #e54040;
-}   
-   
-.search-wrapper button:active,
-.search-wrapper button:focus{   
-    background: #c42f2f;
-    outline: 0;   
-}
- 
-.search-wrapper button:before { /* left arrow */
-    content: '';
-    position: absolute;
-    border-width: 8px 8px 8px 0;
-    border-style: solid solid solid none;
-    border-color: transparent #d83c3c transparent;
-    top: 12px;
-    left: -6px;
-}
- 
-.search-wrapper button:hover:before{
-    border-right-color: #e54040;
-}
- 
-.search-wrapper button:focus:before,
-.search-wrapper button:active:before{
-        border-right-color: #c42f2f;
-}      
- 
-.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
-    border: 0;
-    padding: 0;
-}    
-	
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   font-size: 10px;
+	  font-style: italic;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   font-size: 10px;
+	   font-style: italic;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  font-size: 10px;
+	   font-style: italic;
+	}
 </style>
 </head>
 <body  >
 
-	<div class="sun-wrapper darkblue-bg">
+	<div class="sun-wrapper red-bg">
 		<div class="sun-header">
 			<jsp:include page="element/header.jsp"></jsp:include>
 		</div>
@@ -198,34 +130,96 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
 		
 		        <!-- Page Content -->
 		        <div id="" >	          
-		            <div class="col-lg-12" id="body-container" style="overflow:auto;">	   
+		            <div class="col-sm-12" id="body-container" style="overflow:auto;">	   
 		            	 	 
 		            	<div id="contain-wrapper">
-		                 	<div class="title-bar">
-		                 		<div class="title-text">
-		                 			<p class="title-showing"><span class="txt-title"><i class="fa fa-cubes" aria-hidden="true"></i> Event</span><span class="title-detail"> this includes all events that you created.</span></p>        			
+		                 	<div class="title-bar col-sm-12">
+		                 		<div class="row">
+			                 		<div class="title-text">
+			                 			<p class="title-showing"><span class="txt-title"><i class="fa fa-cubes" aria-hidden="true"></i> Event</span><span class="title-detail"> this includes all events that you created.</span></p>        			
+			                 		</div>
+									<div class="search-box" >
+										
+										<div style="width: 60%;float:right">
+										  <div class="input-group">
+						                    <input type="text" class="form-control" id="overall-search">
+						                    <span class="input-group-btn">
+						                      <button id="hoho" class="btn btn-info btn-danger btn-event-style" type="button" >Search</button>
+						                    </span>
+						                  </div><!-- /input-group -->									
+										</div>
+			                 			 
+			                 		
+										<!-- <div class="type-box">
+											<button type="button" class="btn-ch-type"><i class="fa fa-th-large center-box" aria-hidden="true"></i></button>									
+										</div>
+										<div class="type-table">
+											<button type="button" class="btn-ch-type btn-click-on"><i class="fa fa-table center-box"  aria-hidden="true"></i></button>
+										</div>
+										<div style="clear:both"></div>	  -->
+									</div>	
+									<div style="clear:both"></div>
+								</div>	                 	
+		                 	</div>
+		                 	
+		                 	<div class="search-box-mini col-sm-12" >
+		                 		<div class="row">
+			                 		<div class="col-sm-6" style="float:right;">
+										 <div class="input-group">
+							                 <input type="text" class="form-control" id="overall-search-mini">
+							                 <span class="input-group-btn">
+							                     <button class="btn btn-info btn-danger btn-event-style" type="button">Search</button>
+							                 </span>
+						           		 </div><!-- /input-group -->
+						           
+			                 		</div>
 		                 		</div>
-								<div class="display-type">
+		                 	</div>
+		          
+		                 	<div class="search-box-advance col-sm-12">
+		                 		<div class="row">
+			                 		<div class="col-sm-2 sdate-choosing vertical-gap" >
+				                 		<div class="input-group">
+										   <div class="input-group-addon">
+												<i class="fa fa-calendar"></i>
+											</div>
+											<input type="text" class="form-control" placeholder="START DATE">
+										</div>
+									</div>
 									
-									<div class="type-box">
-										<button type="button" class="btn-ch-type"><i class="fa fa-th-large center-box" aria-hidden="true"></i></button>									
+									<div class="col-sm-2 edate-choosing vertical-gap" >
+				                 		<div class="input-group">
+										   <div class="input-group-addon">
+												<i class="fa fa-calendar"></i>
+											</div>
+											<input type="text" class="form-control" placeholder="END DATE" >
+										</div>
 									</div>
-									<div class="type-table">
-										<button type="button" class="btn-ch-type btn-click-on"><i class="fa fa-table center-box"  aria-hidden="true"></i></button>
+									
+									<div class="col-sm-2 vertical-gap" >
+				                 		<div class="input-group">
+										   <div class="input-group-addon">
+												<i class="fa fa-calendar"></i>
+											</div>
+											<select class="form-control">
+												<option>2</option>
+											</select>
+										</div>
 									</div>
-									<div style="clear:both"></div>	 
-								</div>	
-								<div style="clear:both"></div>	                 	
+									
+									<div class="col-sm-4 vertical-gap">
+										 	
+			                 			<div class="input-group">
+						                    <input type="text" class="form-control">
+						                    <span class="input-group-btn">
+						                      <button class="btn btn-info btn-danger btn-event-style" type="button">Search</button>
+						                    </span>
+						                </div>							
+									</div>
+								</div>
 		                 	</div>
 		                 	
-		                 	<div class="search-box">
-		                 		<div  class="search-wrapper cf">
-							        <input type="text" placeholder="Search here..." required="">
-							        <button type="submit">Search</button>
-							    </div>
-		                 	</div>
-		                 	
-		                 	<div class="display-content">
+		                 	<div class="display-content col-sm-12">
 		                 	
 		                 	</div>
 		       
@@ -278,6 +272,13 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
     	$('#sidebar-wrapper').css("height","100%");
     	setTimeout(function(){ $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height()); }, 180); 
     	 $("#body-container").height($(window).height()-$(".div-space").height());
+    	/*  if($(window).width() <= 768 ){
+    		
+    		 $("#overall-search-mini").val($("#overall-search").val());
+    	 }else{
+    		
+    		 $("#overall-search").val($("#overall-search-mini").val());
+    	 } */
     });
     $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height());
     $("#body-container").height($(window).height()-$(".div-space").height()); 
@@ -301,6 +302,18 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
     $("button.btn-ch-type").click(function(){
     	$("button.btn-ch-type").removeClass("btn-click-on");
     	$(this).addClass("btn-click-on");
+    });
+    
+    $("ul.nav-header li").click(function(){
+    	
+    	 $("ul.nav-header li").removeClass("active");
+    	$(this).addClass("active");
+    	
+    });
+    $("#hoho").click(function(){
+    	
+    	$(".search-box-advance").slideToggle("fast");
+    	
     });
     </script>
 </body>
