@@ -25,85 +25,26 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/sidebar-menu.css">
 <style>
 	
-	div.title-bar{
-		width: 100%;
-		border-bottom: 2px solid #BDBDBD;
-		height: 45px;
+	span.text-result-style1{
+		color: #BDBDBD;
 	}
-	div.title-text{
-		width: 50%;
-		float: left;
+	span.text-result-style2{
+		color: #BDBDBD;
 	}
-	
-	div.search-box{
-		width: 50%;
-		float: left;
-		
+	span.text-result-style3{
+		color: #BDBDBD;
+		font-style:italic;
+		font-size: 10px;
 	}
-	div.type-table,div.type-box {
-		width: 35px;
-		min-height: 40px;
-		float:right;
-		text-align:center;
-		font-size: 22px;
-		color: #616161;
-		
-	}
-	
-	.btn-ch-type:active,
-	.btn-ch-type:focus,
-	.btn-ch-type.active {
-	  background-image: none;
-	  outline: 0;
-	  -webkit-box-shadow: none;
-	  box-shadow: none;
-	}
-	
-	button.btn-ch-type{
-		border-radius: 0;
-	}
-	
-	div.search-box-mini{
+	div.display-result-count{
 		padding-top: 10px;
-		width: 100%;
-		min-height: 44px;
+		height: 30px;
 		
 	}
-	div.search-box-advance{
-		width: 100%;
-		height: 50px;
-		padding-top: 5px;
+	p.text-result{
 		
-	}
-	
-	div.vertical-gap{
-		margin-top: 10px;
-	}
-	
-	
-	input.form-control,select.form-control{
-		border-radius: 0;
-	}
-	
-	button.btn-event-style{
-		border-radius: 0;
-	}
-	
-	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    font-size: 10px;
-    font-style: italic;
-	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	   font-size: 10px;
-	  font-style: italic;
-	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	   font-size: 10px;
-	   font-style: italic;
-	}
-	:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	  font-size: 10px;
-	   font-style: italic;
+		
+		border-bottom: 1px solid #BDBDBD;
 	}
 </style>
 </head>
@@ -140,7 +81,7 @@
 			                 		</div>
 									<div class="search-box" >
 										
-										<div style="width: 60%;float:right">
+										<div style="width: 60%;float:right;">
 										  <div class="input-group">
 						                    <input type="text" class="form-control" id="overall-search">
 						                    <span class="input-group-btn">
@@ -168,7 +109,7 @@
 										 <div class="input-group">
 							                 <input type="text" class="form-control" id="overall-search-mini">
 							                 <span class="input-group-btn">
-							                     <button class="btn btn-info btn-danger btn-event-style" type="button">Search</button>
+							                     <button class="btn btn-info btn-danger btn-event-style" id="btn-search-mini" type="button">Search</button>
 							                 </span>
 						           		 </div><!-- /input-group -->
 						           
@@ -219,6 +160,15 @@
 								</div>
 		                 	</div>
 		                 	
+		                 	<div class="display-result-count col-sm-12">
+		                 		<div class="row">
+		                 		<div style="float:left;width: 50%;" >
+		                 			<p class="text-result"><span class="text-result-style1">Total-Event: <b style="font-size: 15px">3</b> Events</span><span class="text-result-style2"> / Total-Paid: <b style="font-size: 15px">$ 12350</b></span><span class="text-result-style3"> / Seraching result: 2 events</span></p>		                 		
+		                 		</div>
+		                 			
+		                 		</div>		                 	
+		                 	</div>
+		                 	
 		                 	<div class="display-content col-sm-12">
 		                 	
 		                 	</div>
@@ -241,7 +191,7 @@
 				</div> -->
 		
 			
-		    
+		   
 		    
 		</div>
 		
@@ -255,8 +205,10 @@
   <script src="${pageContext.request.contextPath }/resources/plugin/bootstrap/js/bootstrap.min.js"></script>
   <script>
   
-
-
+	$(window).load(function(){
+		 $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height());
+		 $("#body-container").height($(window).height()-$(".div-space").height()); 	
+	});
  
 
   
@@ -272,16 +224,20 @@
     	$('#sidebar-wrapper').css("height","100%");
     	setTimeout(function(){ $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height()); }, 180); 
     	 $("#body-container").height($(window).height()-$(".div-space").height());
-    	/*  if($(window).width() <= 768 ){
-    		
-    		 $("#overall-search-mini").val($("#overall-search").val());
-    	 }else{
-    		
-    		 $("#overall-search").val($("#overall-search-mini").val());
-    	 } */
+    	
     });
-    $('#sidebar-wrapper').height($('#sidebar-wrapper').height()-$(".div-space").height());
-    $("#body-container").height($(window).height()-$(".div-space").height()); 
+    
+    $("#overall-search-mini").on("keyup keydown",function(){
+    	$("#overall-search").val($("#overall-search-mini").val());
+    });
+    $("#overall-search").on("keyup keydown",function(){
+    	$("#overall-search-mini").val($("#overall-search").val());
+    });
+    $("#btn-search-mini").click(function(){
+    	alert($("#overall-search").val());
+    });
+    
+  
     
     $("#sidebar-wrapper ul.sidebar-nav li.li-has-child > a").click(function(){
     	$("#sidebar-wrapper ul.sidebar-nav li.li-has-child > a").removeClass("click-on");
@@ -310,9 +266,19 @@
     	$(this).addClass("active");
     	
     });
-    $("#hoho").click(function(){
+    $("#hoho").toggle(function(){
     	
-    	$(".search-box-advance").slideToggle("fast");
+    	$(".search-box-advance").slideDown("fast");
+    	$("div.title-bar").css({
+    		"border-bottom":"1px solid #BDBDBD"   		
+    	});
+    	
+    }, function(){
+    	$(".search-box-advance").slideUp("fast");
+    	$("div.title-bar").css({
+    		"border-bottom":"2px solid #BDBDBD"
+    		
+    	});
     	
     });
     </script>
